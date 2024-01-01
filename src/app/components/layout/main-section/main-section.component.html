@@ -1,1 +1,65 @@
-<p>main-section works!</p>
+<div class="container">
+  <div class="title-container">
+    <h1>Shopping with coupons, applied automatically!</h1>
+
+    <div class="subtitle-people-container">
+      <p>Used by over 500,000</p>
+      <div class="people-section">
+        <div class="people-container">
+          <div class="circle-avatar-group">
+            @for (imagePath of imagesPath(); track $index) {
+            <div class="circle-avatar">
+              <img [src]="imagePath" />
+            </div>
+            }
+          </div>
+
+          <div class="single-circle-avatar">
+            <div class="circle-avatar">
+              <img [src]="singleImagePath()" />
+            </div>
+            <div>
+              <h1>Wow, I saved $500!</h1>
+              <p>Johnny Doe</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="steps-container">
+    <div class="steps-subcontainer">
+      <div class="step-container">
+        <div class="step-circle">
+          <span>1</span>
+        </div>
+
+        <p>Download the Extension for Chrome or Firefox</p>
+      </div>
+
+      <div class="step-container">
+        <div class="step-circle">
+          <span>2</span>
+        </div>
+        <p>Visit your favorite online retailers.</p>
+      </div>
+
+      <div class="step-container">
+        <div class="step-circle">
+          <span>3</span>
+        </div>
+        <p>Save! Apply coupons from the toolbar</p>
+      </div>
+    </div>
+
+    <div class="button-container">
+      <app-button
+        [border]="true"
+        [primaryText]="true"
+        iconPath="../../../../assets/icons/arrow-down.svg"
+        >Install Extension
+      </app-button>
+    </div>
+  </div>
+</div>

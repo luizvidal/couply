@@ -1,7 +1,7 @@
-import { Component } from '@angular/core';
+import { Component } from "@angular/core";
 
 @Component({
-  selector: 'app-logo',
+  selector: "app-logo",
   standalone: true,
   template: `
     <div class="container">
