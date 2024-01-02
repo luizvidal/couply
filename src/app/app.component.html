@@ -5,26 +5,21 @@
 
   <app-divider />
   <app-main-section />
+
   <app-social-brands />
 
+
   <div class="cards">
-    <app-cards
-      title="Women's Nike Shoes"
-      price="59"
-      imagePath="images/alcohol.jpeg"
-    />
-
-    <!-- <app-cards
-      title="Women's Nike Shoes"
-      price="59"
-      imagePath="images/alcohol.jpeg"
-    />
-
-    <app-cards
-      title="Women's Nike Shoes"
-      price="59"
-      imagePath="images/alcohol.jpeg"
-    /> -->
+    @for(card of cards(); track $index) {
+    <div class="card-overflow" >
+      <app-cards
+        [title]="card.title"
+        [price]="card.price"
+        [imagePath]="card.imagePath"
+      />
+    </div>
+    }
   </div>
+
   <app-footer />
 </div>

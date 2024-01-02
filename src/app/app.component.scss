@@ -2,12 +2,18 @@
   padding: 2rem 4rem 1rem 4rem;
 }
 
-
-
 .cards {
   padding: 2rem 4rem;
-  background-color: white;
-  height: 700px;
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  background-color: white;
+  border-bottom: 2px solid black;
+}
 
+.card-overflow {
+  margin-top: -100px;
+  margin-bottom: 100px;
 }
